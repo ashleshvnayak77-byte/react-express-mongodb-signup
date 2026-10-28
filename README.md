@@ -1,49 +1,37 @@
-# Sign Up App — React, Express REST API and MongoDB
+Sign Up Process — React, Express.js, REST API and MongoDB
+A simple full-stack sign-up and login project created for MERN Lab Task 2.
+Output and Project Links
+- GitHub source code: https://github.com/ashleshvnayak77-byte/react-express-mongodb-signup
+- Run the frontend locally: http://localhost:5173/
+- Backend server locally: http://localhost:5000/
+Live demo status: The project has been tested locally, but a public hosted demo has not been configured yet. The localhost links work only while the project is running on your computer.
 
-A simple lab task with a React sign-up/login form, an Express REST API and MongoDB storage.
+Technologies Used
+- React and Vite — frontend
+- CSS — light-blue user interface
+- Node.js and Express.js — backend server
+- REST API — sign-up and login requests
+- MongoDB Atlas and Mongoose — user data storage
+- bcrypt — password hashing
+Features
+- Sign-up form with email and password
+- Login form/link for existing users
+- REST API routes for sign-up and login
+- Duplicate-email checking
+- Passwords are hashed before being stored in MongoDB
+- Responsive, simple light-blue interface
+Run the Project Locally
+1. Install dependencies
+Install Node.js if it is not already installed: https://nodejs.org/
 
-## Features
-- Sign up with email and password
-- Log in with an existing account
-- Checks for duplicate email addresses
-- Passwords are hashed before being saved in MongoDB
-- Simple responsive design
-
-## Run locally
-
-### 1. Install Node.js
-Install the Node.js LTS version if it is not already installed: https://nodejs.org/
-
-### 2. Create a MongoDB database
-Create a free MongoDB Atlas cluster: https://www.mongodb.com/cloud/atlas
-Create a database user, allow your current IP address in Network Access, and copy the Node.js connection string. Replace `USERNAME` and `PASSWORD` in the connection string with the database user's credentials.
-
-### 3. Add your database connection
-In this project folder, copy `.env.example` to a new file named `.env`. Put your MongoDB Atlas connection string after `MONGODB_URI=`. Keep `.env` private; it is ignored by Git.
-
-Example:
-
-```env
-MONGODB_URI=mongodb+srv://myUser:myPassword@cluster0.example.mongodb.net/signup_lab?retryWrites=true&w=majority
-PORT=5000
-```
-
-Do not include angle brackets. If your password contains special characters, URL-encode them in the connection string.
-
-### 4. Install packages and run
-Open Command Prompt in this folder and run:
-
-```bash
+Open a terminal in the project folder and run:
 npm install
+2. Configure MongoDB
+Create a .env file in the project root and set your MongoDB Atlas connection string:
+MONGODB_URI=your_mongodb_connection_string
+PORT=5000
+Do not upload .env to GitHub. The .gitignore file should exclude it.
+3. Start the frontend and backend
 npm run dev
-```
-
-Open the local URL printed by Vite (usually http://localhost:5173). Keep the terminal open while testing.
-
-## REST API
-
-- `POST /api/auth/signup` — body: `{"email":"student@example.com","password":"secret123"}`
-- `POST /api/auth/login` — body: `{"email":"student@example.com","password":"secret123"}`
-
-## Deploying
-Build the React app with `npm run build`, then start the Express server with `npm start`. The server serves the built frontend and API from one web service. Configure `MONGODB_URI` as an environment variable in your hosting dashboard; do not upload `.env` to GitHub.
+Open the frontend at http://localhost:5173/.
+Keep the terminal running while testing.
