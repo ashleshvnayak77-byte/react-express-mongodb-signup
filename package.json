@@ -1,0 +1,25 @@
+{
+  "name": "react-express-mongodb-signup",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple signup and login lab task using React, Express REST API and MongoDB",
+  "scripts": {
+    "dev": "concurrently \"nodemon server/server.js\" \"vite client --config client/vite.config.js\"",
+    "start": "node server/server.js",
+    "build": "vite build client --config client/vite.config.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "vite": "^6.1.0"
+  }
+}
