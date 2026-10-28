@@ -3,9 +3,7 @@ A simple full-stack sign-up and login project created for MERN Lab Task 2.
 Output and Project Links
 - Live website / output: https://react-express-mongodb-signup-1.onrender.com/
 - GitHub source code: https://github.com/ashleshvnayak77-byte/react-express-mongodb-signup
-- Hosted sign-up API endpoint: POST https://react-express-mongodb-signup-1.onrender.com/api/auth/signup
-- Hosted login API endpoint: POST https://react-express-mongodb-signup-1.onrender.com/api/auth/login
-Open the live website link to view and test the light-blue sign-up page. The API endpoints accept POST requests; opening them directly in a browser will not submit a sign-up or login form.
+
 Technologies Used
 - React and Vite — frontend
 - HTML and CSS — page structure and light-blue user interface
